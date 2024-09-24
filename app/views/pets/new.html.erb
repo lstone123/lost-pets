@@ -1,0 +1,9 @@
+<h1>add a new pet here</h1>
+
+<%# we no longer display the form inside the new.
+Instead it is inside the _form.html.erb file
+we now render the form using the line of code below,
+passing the @pet instance we created in the new action
+through to the partial.
+%>
+<%= render 'form', pet: @pet %>

@@ -1,0 +1,22 @@
+<%# <%= form_with model: @pet do |f| %>
+<%# <%= f.label :name %>
+<%# <%= f.text_field :name %>
+<%# <%= f.label :species %>
+<%# <%= f.text_field :species %>
+<%# <%= f.label :address %>
+<%# <%= f.text_field :address %>
+<%# <%= f.label :found_on %>
+<%# <%= f.date_field :found_on %>
+<%# <%= f.submit %>
+<%# <% end %>
+
+<%# now we have the simple_form gem added we can use the below
+for our form rather than form_with %>
+
+<%= simple_form_for(pet) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :species %>
+  <%= f.input :address %>
+  <%= f.input :found_on %>
+  <%= f.submit %>
+<% end %>
